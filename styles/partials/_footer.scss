@@ -1,0 +1,141 @@
+footer {
+	font-family:$font-fancy-stack;
+		a {
+		color:$primary-color;
+		&:hover, &:focus {
+			color:$accent-color;
+		}
+	}
+}
+
+.footer-top {
+	background-color:$heading-color;
+	color:#ccc;
+	.wrapper {
+		display:flex;
+		flex-wrap:wrap;
+		padding:100px 0;
+		font-weight:light;
+		@media (max-width: 768px) {
+			padding:50px 0;
+		}
+		.logo {
+			top:0;
+			.logo-text {
+				color:$secondary-color;
+				top:13px;
+			}
+			img {
+				position:relative;
+				top:0;
+			}
+		}
+		.col13 {
+			h3 {
+				font-family:$font-base-stack;
+				color:$secondary-color;
+				font-weight:400;
+				text-transform:uppercase;
+				letter-spacing:2px;
+				margin-right:-2px;
+				margin-top:20px;
+				margin-bottom:30px;
+			}
+			&:first-child {
+				@media (max-width: 940px) {
+					width:100%;
+				}
+				p {
+					margin:25px 0 15px 0;
+				}
+			}
+			&:nth-child(2) {
+				@media (max-width: 940px) {
+					width:50%;
+				}
+				@media (max-width: 768px) {
+					width:100%;
+				}
+				ul {
+					list-style:none;
+					li a {
+						color:#ccc;
+					}
+					li.time {
+						font-size:13px;
+						color:$primary-color;
+						margin-bottom:20px;
+					}
+					li:last-child {
+						margin-bottom:0;
+					}
+				}
+			}
+			&:last-child {
+				@media (max-width: 940px) {
+					width:50%;
+				}
+				@media (max-width: 768px) {
+					width:100%;
+				}
+				.flickr-gallery {
+					display:flex;
+					flex-wrap:wrap;
+					margin:-5px;
+					.flickr-image {
+						width:33.33%;
+						img {
+							padding:5px;
+							display:block;
+							transition:0.5s outline;
+							&:hover, &:focus {
+								outline:20px solid rgba(247,148,29,0.6);
+								outline-offset:-25px;
+								outline-style:double;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	background-color:#252525;
+	padding:20px 15px;
+	.wrapper {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		@media (max-width: 940px) {
+			display:block;
+		}
+		p {
+			@media (max-width: 940px) {
+			text-align:center;
+			margin-bottom:20px;
+			}
+		}
+		.social-links {
+			display:flex;
+			flex-wrap:wrap;
+			color:#ccc;
+			font-size:12px;
+			li {
+				display:inline-block;
+				padding:0 20px;
+				margin:auto;
+				&:last-child {
+					padding-right:0;
+					@media (max-width: 940px) {
+						padding-right:20px;
+					}
+				}
+				a {
+					font-size:16px;
+				}
+			}
+		}
+	}
+}
