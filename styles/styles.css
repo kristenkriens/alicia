@@ -1452,6 +1452,51 @@ footer a:hover, footer a:focus {
   }
 }
 
+.portfolio-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 550px) {
+  .portfolio-heading {
+    flex-wrap: wrap;
+  }
+}
+
+.portfolio-navigation {
+  display: flex;
+  height: 35px;
+  padding-right: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 550px) {
+  .portfolio-navigation {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.portfolio-navigation a {
+  color: #423e3f;
+}
+
+.portfolio-navigation-prev img {
+  transform: rotate(180deg);
+}
+
+.portfolio-navigation-next {
+  text-align: right;
+}
+
+.portfolio-navigation-divider {
+  width: 1px;
+  background-color: #423e3f;
+  transform: rotate(30deg);
+  margin: -5px 5px;
+}
+
 .portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
